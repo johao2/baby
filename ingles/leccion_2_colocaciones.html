@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 2: Vocabulario Avanzado (Colocaciones)</title>
+    <link rel="stylesheet" href="estilos/styles.css"> 
+    <style>
+        /* Estilos del Quiz (Añadidos para esta página) */
+        .question-box { background-color: #f9f9f9; padding: 20px; margin-bottom: 15px; border-left: 5px solid #007acc; border-radius: 4px; }
+        .answer-input { width: 100%; padding: 10px; margin-top: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        #collocation-results { margin-top: 30px; padding: 20px; border: 2px solid #27ae60; border-radius: 8px; font-size: 1.2em; font-weight: bold; text-align: center; display: none; }
+        .check-button { width: 100%; padding: 15px; background-color: #007acc; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 1.1em; margin-top: 20px; transition: background-color 0.3s; }
+        .check-button:hover { background-color: #0056b3; }
+        .feedback-msg { margin-top: 5px; font-size: 0.9em; font-style: italic; }
+        .correct { color: green; }
+        .incorrect { color: red; }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>🗣️ Módulo 2: Vocabulario Avanzado (CLB 9+)</h1>
+    </header>
+
+<nav class="nav-menu">
+    <ul>
+        <li><a href="index.html">🏠 Inicio</a></li>
+        <li><a href="celpip_vs_ielts.html">🧠 Módulo 0: Estrategia</a></li>
+        <li><a href="modulo_gramatica.html">📚 Gramática Avanzada (C1/C2)</a></li>
+        <li><a href="leccion_2_colocaciones.html">🗣️ Vocabulario Avanzado</a></li>
+        <li><a href="leccion_3_verbos_quiz.html">✅ Cuestionario de Verbos</a></li> 
+        <li><a href="mi_progreso.html">📊 Evaluación de Habilidades</a></li>
+    </ul>
+</nav>
+
+    <main class="container">
+        <div class="leccion-content">
+            
+            <h2>Clase 2.1: Dominio de Colocaciones (Collocations)</h2>
+            <p><strong>Objetivo CLB 9+:</strong> Usar el vocabulario no solo con palabras sofisticadas, sino con las **combinaciones de palabras** que suenan nativas y académicas. El uso incorrecto de las colocaciones es uno de los errores más comunes de los estudiantes avanzados.</p>
+
+            <h3>I. Definición y Tipos de Colocaciones</h3>
+            <p>Una **Colocación** es una combinación natural de palabras en un idioma. Si utilizas *strong rain* en lugar de *heavy rain*, tu mensaje es claro, pero tu puntuación baja porque no estás usando la combinación correcta.</p>
+            
+            <div class="ejemplo-c1">
+                <p><strong>Verbo + Sustantivo:</strong> **Conduct** a survey, **make** a complaint, **put forward** an argument.</p>
+                <p><strong>Adverbio + Adjetivo:</strong> **Vitally** important, **fiercely** competitive, **highly** successful.</p>
+                <p><strong>Adjetivo + Sustantivo:</strong> **Crucial** factor, **burning** issue, **detrimental** effect.</p>
+            </div>
+
+            <h3>II. La Importancia del Impacto Léxico</h3>
+            <p>En el *Writing* y *Speaking*, los examinadores buscan **léxico menos común y más idiomático**. Las colocaciones te permiten usar vocabulario avanzado sin cometer errores de gramática.</p>
+
+            <div class="ejemplo-c1">
+                <p>❌ **Común:** It's a very big problem.</p>
+                <p>✅ **Avanzado (Adjetivo + Sustantivo):** It's a **major challenge**.</p>
+                <p>❌ **Común:** We need to do a change.</p>
+                <p>✅ **Avanzado (Verbo + Sustantivo):** We need to **implement a reform**.</p>
+            </div>
+
+            <hr>
+            
+            <h2>🎯 Quiz de Precisión Léxica: 20 Colocaciones</h2>
+            <p>Completa la frase con el **verbo o adverbio** que mejor se combine con la palabra en mayúsculas (la colocación). Escribe solo una palabra.</p>
+
+            <form id="collocation-form">
+                </form>
+
+            <button class="check-button" onclick="checkCollocationQuiz()">Verificar Respuestas y Obtener Nota</button>
+
+            <div id="collocation-results"></div>
+            
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 English Flight | Hecho con amor para ti.</p>
+    </footer>
+
+    <script src="scripts/quiz_advanced_grammar.js"></script>
+    <script>
+        // Inicializa el quiz de colocaciones al cargar la página.
+        document.addEventListener('DOMContentLoaded', () => {
+            // NOTA: 'collocationQuestions' debe estar definido en quiz_advanced_grammar.js
+            // Usamos un try-catch por si el script no está cargado, aunque debería estarlo.
+            try {
+                setupQuiz('collocation', collocationQuestions);
+            } catch (e) {
+                console.error("Error al inicializar quiz de colocaciones. Asegúrate que 'collocationQuestions' está en quiz_advanced_grammar.js", e);
+            }
+        });
+        // La función checkCollocationQuiz es generada dinámicamente por setupQuiz
+    </script> 
+</body>
+</html>

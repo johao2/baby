@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 0: Estrategia y Tiempos Verbales</title>
+    <link rel="stylesheet" href="estilos/styles.css"> 
+    <style>
+        .comparison-table { width: 100%; border-collapse: collapse; margin: 25px 0; font-size: 1em; text-align: left; }
+        .comparison-table th, .comparison-table td { padding: 12px 15px; border: 1px solid #ddd; }
+        .comparison-table th { background-color: #f0f0f0; color: #333; font-weight: bold; }
+        .question-box { background-color: #f9f9f9; padding: 20px; margin-bottom: 15px; border-left: 5px solid #007acc; border-radius: 4px; }
+        .answer-input { width: 100%; padding: 10px; margin-top: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        #quiz-results { margin-top: 30px; padding: 20px; border: 2px solid #27ae60; border-radius: 8px; font-size: 1.2em; font-weight: bold; text-align: center; display: none; }
+        .check-button { width: 100%; padding: 15px; background-color: #007acc; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 1.1em; margin-top: 20px; transition: background-color 0.3s; }
+        .check-button:hover { background-color: #0056b3; }
+        .feedback-msg { margin-top: 5px; font-size: 0.9em; font-style: italic; }
+        .correct { color: green; }
+        .incorrect { color: red; }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>🚀 Módulo 0: La Estrategia Definitiva</h1>
+    </header>
+
+<nav class="nav-menu">
+    <ul>
+        <li><a href="index.html">🏠 Inicio</a></li>
+        <li><a href="celpip_vs_ielts.html">🧠 Módulo 0: Estrategia</a></li>
+        <li><a href="modulo_gramatica.html">📚 Gramática Avanzada (C1/C2)</a></li>
+        <li><a href="leccion_2_colocaciones.html">🗣️ Vocabulario Avanzado</a></li>
+        <li><a href="leccion_3_verbos_quiz.html">✅ Cuestionario de Verbos</a></li> 
+        <li><a href="mi_progreso.html">📊 Evaluación de Habilidades</a></li>
+    </ul>
+</nav>
+
+    <main class="container">
+        <div class="leccion-content">
+            
+            <h2>CELPIP vs. IELTS: Tu Decisión Estratégica para CLB 9+</h2>
+            <p>Ambos exámenes son válidos para Inmigración a Canadá. La clave es cuál se alinea mejor con tus fortalezas como hablante C1/C2.</p>
+            
+            <hr>
+            
+            <h2>📝 Clase de Refuerzo: Tiempos Verbales Esenciales (Bases de CLB 9)</h2>
+            <p>Antes de usar estructuras avanzadas, debemos garantizar la **precisión total** en los cinco tiempos verbales más usados en IELTS/CELPIP.</p>
+
+            <table class="comparison-table" style="font-size: 0.95em;">
+                <thead>
+                    <tr>
+                        <th>Tiempo</th>
+                        <th>Uso Clave</th>
+                        <th>Fórmula</th>
+                        <th>Ejemplo C1</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>**Simple Present**</td>
+                        <td>Hechos, opiniones formales (*The study suggests...*)</td>
+                        <td>Sujeto + Verb(s/es)</td>
+                        <td>*The climate **changes** rapidly.*</td>
+                    </tr>
+                    <tr>
+                        <td>**Simple Past**</td>
+                        <td>Acciones completadas en un tiempo definido (*Last week, I completed...*)</td>
+                        <td>Sujeto + V-ed / V Irregular</td>
+                        <td>*The company **invested** heavily.*</td>
+                    </tr>
+                    <tr>
+                        <td>**Present Continuous**</td>
+                        <td>Acciones en curso o planes futuros definidos (*I am planning to move...*)</td>
+                        <td>Sujeto + am/is/are + V-ing</td>
+                        <td>*The economy **is improving** steadily.*</td>
+                    </tr>
+                    <tr>
+                        <td>**Present Perfect**</td>
+                        <td>Experiencias o acciones no terminadas (*I have lived here for 5 years.*)</td>
+                        <td>Sujeto + have/has + V-Participle II</td>
+                        <td>*We **have noticed** the difference.*</td>
+                    </tr>
+                    <tr>
+                        <td>**Past Continuous**</td>
+                        <td>Acción en progreso interrumpida en el pasado.</td>
+                        <td>Sujeto + was/were + V-ing</td>
+                        <td>*I **was analyzing** the data when...*</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr>
+
+            <h2>🎯 Quiz Rápido: 20 Preguntas de Precisión Básica</h2>
+            <p>Escribe la conjugación correcta del verbo entre paréntesis. ¡No olvides el auxiliar si es necesario!</p>
+
+            <form id="basic-verb-quiz-form">
+                </form>
+
+            <button class="check-button" onclick="checkBasicQuiz()">Terminar Quiz y Ver Nota</button>
+
+            <div id="quiz-results"></div>
+            
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 English Flight | Hecho con amor para ti.</p>
+    </footer>
+
+    <script src="scripts/quiz_basic_verbs.js"></script> 
+</body>
+</html>
